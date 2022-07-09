@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow: auto
+
+}
+
+nav ul li, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: dimgray;
+    background-color: white;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    font-size: none;
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:    10px 10%;
+    width: 100%;
+    white-space: none;
+    background-color: white;
+    height: 60px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+}
+
+#hidden-nav{
+    height: 80px;
+    width: 100%;
+    visibility:  hidden;
+}
+
+#nav-bar-galaxy-logo {
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 1px;
+    position: relative;
+    right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding : 0 20px;
+    background-color: white;
+    font-weight: 700;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    background-color: white;
+    color: black;
+}
+nav ul li a:hover {
+    color: lightblue;
+}
+
+.nav-bar a button {
+    padding: 9px 25px;
+    background-color: rgba(51, 255, 255, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-bar a button:hover {
+    background-color: rgba(51, 255, 255, 0.5 );
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.front-poster {
+    background-image: url(../images/desertx1980x1080.jpg);
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    background-size: 1080px 500px;
+    border-radius: 5%;
+    border: 2px solid white;
+}
+.front-poster {
+    color: white;
+    padding: 350px 0px 0px 50px;
+    font-family: Permanent Marker, sans-serif;
+    font-size: large;
+    opacity: 0.8;
+
+}
+
+#package-section {
+    text-align: center;
+    font-family: Josefin Sans , sans-serif;
+    margin-top: 50px;
+    font-size: xx-large;
+    padding : 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    letter-spacing: 5px;
+
+    
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    height: 350x;
+    font-family: Edu VIC WA NT Beginner,sans-serif;
+}
+
+.package {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    margin: 50px;
+    font-weight: 400;
+
+}
+
+.package-title {
+    height: 200px;
+    width: 100%;
+    padding-top: 150px;
+    font-weight: 700;
+    font-size: larger;
+    padding-left: 30px;
+    
+}
+
+.package-title a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0;
+    color: black;
+}
+.package-title a:hover {
+    transition: all 0.3s ease all;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#moroccan-grand-tour {
+    background-image: url(../images/tannery-fez-morocco_square.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#northen-tour {
+    background-image: url(../images/Feddan-Tetouan.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fez-to-marrackech {
+    background-image: url(../images/pool-perspective-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.days,.persons {
+    display: inline-block;
+    font-weight: 500px;
+}
+.persons {
+    float: right;
+}
+.support {
+    display: flex;
+    justify-content:center;
+    font-family: Montserrat,sans-serif;
+    margin-top: 70px;
+}
+
+#support-logo {
+    font-size: 90px;
+    color: red;
+}
+
+.customer-support p {
+    width: 200px;
+    font-weight: 700;
+}
+.customer-support h5 {
+    font-size: larger;
+    color: red;
+    
+}
+
+aside{
+    width: 100%;
+    height: 50px;
+    font-family: Montserrat, sans-serif;
+    background-image: url(../images/desertx1980x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+aside p {
+    font-weight: 800;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+footer p {
+    padding-left: 30px;
+}
+
+footer a {
+    padding-right: 50px;
+    color: rgba(0,0, 0, 1);
+    transition:  all 0.3s ease 0s;
+}
+
+footer a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0;
+}
+
+footer a ion-icon {
+    font-size: 26px;
+}
+
+
+
+
+
