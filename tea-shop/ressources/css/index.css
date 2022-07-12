@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+}
+
+body {
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    
+
+}
+
+h3 {
+    font-size: 35px;
+}
+
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+#nav-container img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+#nav-container ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#invisible-nav {
+    height: 69px;
+    width: 100%;
+    visibility: hidden;
+}
+
+#mission {
+    height: 1000px;
+    background-image: url(../images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#mission h2, #mission h4 {
+    position: relative;
+    top: 450px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#featured-tea-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#featured-tea-container div img {
+    height: 200px;
+    width: 360px;
+}
+
+#locations {
+    background-image: url(../images/img-locations-background.jpg);
+    width: 95%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#locations-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#locations-container div {
+    position: relative;
+    top: 600px;
+    height: 200px;
+    width: 400px;
+    
+
+}
+
+#locations-container div li{
+    list-style: none;
+    line-height: 50px;
+    background-color: transparent;
+}
+
+#locations h2 {
+    position:relative;
+    top:550px;
+    width: fit-content;
+    background-color: transparent;
+    margin:0 auto;
+    font-size: 80px;
+}
+
+#contact-info {
+    margin: 100px auto;
+}
+
+aside h5 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom : 20px;
+}
