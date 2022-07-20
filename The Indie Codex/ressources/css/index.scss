@@ -44,7 +44,7 @@ header {
     background-color: #F6F7EB;
     align-items: center;
     align-content: center;
-    min-height: 4rem;
+    min-height: 5rem;
     z-index: 1;
     top: 0;
 
@@ -143,6 +143,7 @@ header {
 
         h2 {
             font-size: 3rem;
+            text-align: center;
         }
     }
 }
