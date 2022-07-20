@@ -1,0 +1,20 @@
+<----------------------- COLORS ----------------------------->
+
+
+     https://coolors.co/531fff-020300-f6f7eb 
+
+
+<--------------------------FONTS ----------------------------->
+
+
+        Montserrat 400 700   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        roboto400 700 :      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+<-------------------------wireframe--------------------------->
+
+
+  https://wireframe.cc/A5CzAO
+
+
+  

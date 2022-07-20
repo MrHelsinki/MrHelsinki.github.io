@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+body p, body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #F6F7EB;
+}
+body p {
+  font-family: Roboto, sans-serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.invisible-nav {
+  width: 100%;
+  min-height: 4rem;
+  display: block;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #F6F7EB;
+  align-items: center;
+  align-content: center;
+  min-height: 4rem;
+  z-index: 1;
+  top: 0;
+}
+header .logo {
+  cursor: pointer;
+  color: #020300;
+  float: left;
+}
+header .logo span {
+  border: 3px solid #020300;
+  padding: 0.1em;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 2em;
+  font-size: 1.1rem;
+}
+header ul li a {
+  color: #8162e6;
+}
+header ul li a:hover {
+  color: #020300;
+}
+
+.btn {
+  color: black;
+  border: 0;
+  background-color: #744bfd;
+  border-radius: 100vw;
+  padding: 0.5em 1.5em;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  color: #531FFF;
+  background-color: #020300;
+}
+
+.banner {
+  background-image: url(../images/nixx-studio-dLFmwIOGNYo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 35em;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  border-bottom: 2px solid white;
+}
+.banner h1 {
+  margin-left: 2rem;
+  color: #000000;
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.banner h2 {
+  margin-left: 2rem;
+  color: #020300;
+  font-size: 2rem;
+  opacity: 0.9;
+}
+
+.best .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 9em 0;
+}
+.best .title h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.best .title h2 {
+  font-size: 3rem;
+}
+
+.btn2 {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  color: #020300;
+  background-color: #F6F7EB;
+  border: 0;
+  border-radius: 100vw;
+  padding: 0.5em 1.5em;
+}
+
+.btn2:hover {
+  background-color: rgba(246, 247, 235, 0.6);
+}
+
+.game-card {
+  cursor: pointer;
+  position: relative;
+  transform: scale(1.2);
+}
+
+.thumbnail {
+  border-radius: 10%;
+  width: 12rem;
+  border: 2px solid #F6F7EB;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score-number1 {
+  padding: 0.5em 1em;
+  border: 2px solid #FFF52F;
+  border-radius: 100vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.score-number2 {
+  padding: 0.5em 1em;
+  border: 2px solid #BBFF33;
+  border-radius: 100vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.front {
+  transition: 250ms;
+}
+.front h4 {
+  text-align: center;
+  margin: 0.9em;
+}
+
+.back {
+  position: absolute;
+  opacity: 0;
+  bottom: -7%;
+  left: -15%;
+  right: 0;
+  width: 130%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.back .steam-stats {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-rule: 2px solid rgba(246, 247, 235, 0.6);
+       column-rule: 2px solid rgba(246, 247, 235, 0.6);
+  margin: 0 auto;
+  align-content: center;
+}
+.back .stat {
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 700;
+}
+.back .stat span {
+  font-size: 0.8em;
+  display: block;
+  font-weight: 400;
+}
+.back .bscore {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  min-width: 5em;
+}
+.back .score-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+}
+
+.game-card-background {
+  background: #531FFF;
+  border-radius: 5%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: scale(0.5);
+  transition: 250ms;
+  opacity: 0;
+}
+
+.game-card:hover {
+  transition: 250ms;
+}
+.game-card:hover .front {
+  transform: translateY(-25%) scale(0.9);
+}
+.game-card:hover .front .score {
+  opacity: 0;
+}
+.game-card:hover .front .game-name {
+  -webkit-animation: GameName 250ms forwards;
+          animation: GameName 250ms forwards;
+}
+.game-card:hover .back {
+  opacity: 1;
+}
+.game-card:hover .game-card-background {
+  transform: scale(1.5, 1.2);
+  opacity: 1;
+}
+
+@-webkit-keyframes GameName {
+  0% {
+    text-align: center;
+    opacity: 1;
+    color: #F6F7EB;
+  }
+  20% {
+    text-align: center;
+    opacity: 0;
+    color: #F6F7EB;
+  }
+  50% {
+    text-align: center;
+    opacity: 0;
+    color: #020300;
+    transform: scale(1.4);
+  }
+  100% {
+    text-align: center;
+    opacity: 1;
+    color: #020300;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes GameName {
+  0% {
+    text-align: center;
+    opacity: 1;
+    color: #F6F7EB;
+  }
+  20% {
+    text-align: center;
+    opacity: 0;
+    color: #F6F7EB;
+  }
+  50% {
+    text-align: center;
+    opacity: 0;
+    color: #020300;
+    transform: scale(1.4);
+  }
+  100% {
+    text-align: center;
+    opacity: 1;
+    color: #020300;
+    transform: scale(1.4);
+  }
+}
+.best-games-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10em;
+  margin: 0 3em;
+  margin-bottom: 20em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  background-color: #F6F7EB;
+  color: #020300;
+  padding: 2em 0;
+}
+footer .social-icons a {
+  color: #531FFF;
+  font-size: 3rem;
+  margin: 0 2em;
+  transition: all ease 0.3s;
+}
+footer .social-icons a:hover {
+  color: #020300;
+}
+footer p {
+  text-align: center;
+  color: #020300;
+  font-weight: 700;
+}
+footer p a {
+  color: #531FFF;
+  transition: all ease 0.3s;
+}
+footer p a:hover {
+  color: #020300;
+}/*# sourceMappingURL=index.css.map */
